@@ -12,7 +12,7 @@ params:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-knitr::opts_chunk$set(cache = TRUE)
+#knitr::opts_chunk$set(cache = TRUE)
 # Cambiar esto de acuerdo a donde se haya realizado la recoleccion de los
 # datos fuente: 
 # * Si los datos se recogieron en linux pero se estan analizando en 

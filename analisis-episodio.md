@@ -20,24 +20,119 @@ muestreo o recolección de los datos.
 
 Hay que cargar todas las librerías necesarias para el análisis. Es
 posible que sea necesario depurar esta lista, pero por ahora seguimos
-con todas las que hemos usado en algún momento:
+con todas las que hemos usado en algún
+    momento:
 
 ``` r
 library(tidyverse)                    # Data manipulation
+```
+
+    ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
+
+    ## ✓ ggplot2 3.2.1     ✓ purrr   0.3.3
+    ## ✓ tibble  2.1.3     ✓ dplyr   0.8.3
+    ## ✓ tidyr   1.0.0     ✓ stringr 1.4.0
+    ## ✓ readr   1.3.1     ✓ forcats 0.4.0
+
+    ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+    ## x dplyr::filter() masks stats::filter()
+    ## x dplyr::lag()    masks stats::lag()
+
+``` r
 library(stringr)                      # String manipulation
 library(knitr)                        # Report generation
 library(tidytext)                     # text mining, Silge package
 library(stopwords)                    # to clean up text
 library(lubridate)                    # to ease date manipulation
+```
+
+    ## 
+    ## Attaching package: 'lubridate'
+
+    ## The following object is masked from 'package:base':
+    ## 
+    ##     date
+
+``` r
 library(wordcloud)                    # to make word clouds
+```
+
+    ## Loading required package: RColorBrewer
+
+``` r
 library(RColorBrewer)                 # nice colors
 library(gridExtra)                    # For graph related to
+```
+
+    ## 
+    ## Attaching package: 'gridExtra'
+
+    ## The following object is masked from 'package:dplyr':
+    ## 
+    ##     combine
+
+``` r
 library(scales)                       
+```
+
+    ## 
+    ## Attaching package: 'scales'
+
+    ## The following object is masked from 'package:purrr':
+    ## 
+    ##     discard
+
+    ## The following object is masked from 'package:readr':
+    ## 
+    ##     col_factor
+
+``` r
 library(readxl)                       # For reading excel files
 library(igraph)                       # For making the bigrams graphs
+```
+
+    ## 
+    ## Attaching package: 'igraph'
+
+    ## The following objects are masked from 'package:lubridate':
+    ## 
+    ##     %--%, union
+
+    ## The following objects are masked from 'package:dplyr':
+    ## 
+    ##     as_data_frame, groups, union
+
+    ## The following objects are masked from 'package:purrr':
+    ## 
+    ##     compose, simplify
+
+    ## The following object is masked from 'package:tidyr':
+    ## 
+    ##     crossing
+
+    ## The following object is masked from 'package:tibble':
+    ## 
+    ##     as_data_frame
+
+    ## The following objects are masked from 'package:stats':
+    ## 
+    ##     decompose, spectrum
+
+    ## The following object is masked from 'package:base':
+    ## 
+    ##     union
+
+``` r
 library(ggraph)                       # For making the bigrams graphs
 library(reshape2)
 ```
+
+    ## 
+    ## Attaching package: 'reshape2'
+
+    ## The following object is masked from 'package:tidyr':
+    ## 
+    ##     smiths
 
 Aparecen algunas advertencias que en principio pueden ser ignoradas sin
 problemas.
