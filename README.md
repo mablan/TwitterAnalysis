@@ -5,9 +5,9 @@ Related to Blackout events in Venezuela
 
 * Análisis de los tweets generados por algunas de las instituciones que tienen que ver con la provisión de energía eléctrica en Venezuela durante algunos de los meses del 2018 con fallas recurrentes de suministro eléctrico
  
-..* Script en R
+   * Script en R
 
-..* Gráficos generados por el script
+   * Gráficos generados por el script
 
 * [Ejemplo de análisis de una muestra de los tweets generados en Venezuela alrededor de la fecha cercana a un evento de falla eléctrica](https://github.com/mablan/TwitterAnalysis/blob/master/analisis-episodio.md)
 
